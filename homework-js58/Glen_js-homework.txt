@@ -1,0 +1,69 @@
+Glen Steinmacher
+
+
+		FIRST ONE
+
+		//part 1/3	
+		//navigate to home directory
+
+$ cd ~
+
+		//navigate to the already created [Sites] folder
+
+$ cd Sites
+	
+		//create the directory
+
+$ mkdir -p my-awesome-directory/nested-directory
+
+
+		//part 2/3
+		//create the hello.txt file in nested-directory
+
+$ pwd
+
+$  cd my-awesome-directory/nested-directory
+
+$ touch 'hello.txt'
+
+		//part 3/3
+		//create terminals-are-fun.txt in [Sites] directory
+
+$ cd ~
+
+$ cd Sites
+
+$ touch 'terminals-are-fun.txt'
+
+
+		SECOND ONE
+
+		//part 1/2
+		//navigate to home [Sites] directory
+
+$ cd ~
+
+$ Sites
+
+		//create directory structure and add adele.jpg
+
+$ mkdir -p 1/2/3/4/5/6/7/8/9/hello/its/me/adele.jpg
+
+		//part 2/2
+		//navigate back to Sites directory 
+
+$ cd ~
+
+$ cd Sites
+
+		//create directory structure and add meet.jpg file
+
+$ mkdir -p /i/was/wondering/if/after/all/these/years/you world/like/to/meet.jpg
+
+
+		END
+
+
+
+
+
