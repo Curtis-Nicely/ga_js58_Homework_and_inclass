@@ -65,3 +65,16 @@ if(valid == true){
 }
 
 //THIRD ASSIGNMENT-------------------------------------->
+
+function oddNums(ary){
+	var odds = [];
+	for(var i = 0; i < ary.length; i++){
+		if(ary[i] % 2 == 0){
+			odds.push(ary[i]);
+		}
+	}
+	return odds
+}
+
+var oddsy = oddNums(numberList);
+console.log(oddsy);
