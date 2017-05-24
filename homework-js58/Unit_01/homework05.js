@@ -68,8 +68,8 @@ if(valid == true){
 
 function oddNums(ary){
 	var odds = [];
-	for(var i = 0; i < ary.length; i++){
-		if(ary[i] % 2 == 0){
+	for(var i = 0; i < ary.length; i ++ ){
+		if(i % 2 != 0){
 			odds.push(ary[i]);
 		}
 	}
@@ -78,3 +78,56 @@ function oddNums(ary){
 
 var oddsy = oddNums(numberList);
 console.log(oddsy);
+
+//FOURTH ASSIGNMENT-------------------------------------->
+
+
+function sumArray(array){
+	var currentI = 0;
+	for(var i = 0; i < array.length; i++){
+		
+		currentI = currentI + array[i] ;
+	}
+	return currentI;
+}
+
+var sum = sumArray(numberList);
+console.log(sum);
+
+//FIFF ASSIGNMENT-------------------------------------->
+
+var palindrome = [1,2,3,2,1,4];
+
+function cPalin(array){
+var origArray = array;
+var emordinlap = [];
+
+for(var i = 0; i < array.length; i++){
+	var unit = array[i];
+	emordinlap.unshift(unit);
+}
+if(origArray == emordinlap){
+	return true
+}
+}
+
+var askPalin = cPalin(palindrome);
+if(askPalin == true){
+console.log("yeah this is a palindrome");	
+}else{
+console.log("nope, this array aint no palindrome")
+}
+
+//FIFF ASSIGNMENT-------------------------------------->
+var stng = "racecar"
+function stringPal(testMe){
+	var orig;
+	var newstng;
+	for(var i = 0; i <testMe.length; i++){
+
+	}
+
+}
+
+
+
