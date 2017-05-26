@@ -94,7 +94,7 @@ function sumArray(array){
 var sum = sumArray(numberList);
 console.log(sum);
 
-//FIFF ASSIGNMENT-------------------------------------->
+/**FITH ASSIGNMENT-------------------------------------->
 
 var palindrome = [1,2,3,2,1,4];
 
@@ -117,17 +117,40 @@ console.log("yeah this is a palindrome");
 }else{
 console.log("nope, this array aint no palindrome")
 }
-
-//FIFF ASSIGNMENT-------------------------------------->
-var stng = "racecar"
+*/
+//FIFTH ASSIGNMENT-------------------------------------->
+var stng = "racecarrrr";
+var stng2 = "raacecar";
+var bool;
 function stringPal(testMe){
-	var orig;
-	var newstng;
-	for(var i = 0; i <testMe.length; i++){
+	var orig = testMe;
+	var newString = ' ';
+	var letter;
+	for(var i = testMe.length - 1; i >=0 ; i--){  //<----i had to dig this part up from the online
+		newString = newString + testMe[i];
 
 	}
+if(newString == orig){
+	return true;
+}else{
+	return false;
+}
 
 }
+
+var pali = stringPal(stng);
+var pali2 = stringPal(stng2);
+
+if(pali == true){
+	console.log("yes, " + stng + " is a palindrome");
+	} else {
+		console.log("nope, " + stng + " is not a palindrome");
+	}
+if(pali2 == true){
+	console.log("yes, " + stng2 + " is a palindrome");
+	} else {
+		console.log("nope, " + stng2 + " is not a palindrome");
+	}
 
 
 
