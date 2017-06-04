@@ -19,26 +19,48 @@ When someone enters in a new number and presses Go!, then the previous result sh
 window.onload = function(){
 
 var btn = document.getElementById("input-button");
+var form = document.getElementById("fizzbuzz-form");
 
 btn.onclick = function(event){
 		event.preventDefault();
 var input1 = document.getElementById("the-input").value;
-var parse = input1.parseInt(input1, 10);
-var num = document.createTextNode(parse);
-console.log(num);
+var parsedInput = Number.parseInt(input1, 10);
+var fizzbuzzList = document.createElement("ul");
+
+	form.appendChild(fizzbuzzList);
+// num = document.createTextNode(parsedInput);
+
+for(var i = 1; i <= parsedInput; i ++){
+	if(i % 3 == 0 && i % 5 == 0){
+		var fList = document.createElement("li");
+		fizzbuzzList.appendChild(fList);
+		var fizzbuzz = document.createTextNode("FIZZBUZZ");
+		fList.appendChild(fizzbuzz);
+
+	}else if(i % 3 == 0 ){
+		var fList = document.createElement("li");
+		fizzbuzzList.appendChild(fList);
+		var fizz = document.createTextNode("fizz");
+		fList.appendChild(fizz);
+
+	}else if(i % 5 == 0){
+		var fList = document.createElement("li");
+		fizzbuzzList.appendChild(fList);
+		var buzz = document.createTextNode("buzz");
+		fList.appendChild(buzz);
+	}else{
+		var fList = document.createElement("li");
+		fizzbuzzList.appendChild(fList);
+		var num = document.createTextNode(i);
+		fList.appendChild(num);
+	}
+}
+
+
+
 
 		
 
-	
-
-}
-
-function fizzbuzz(number){
-	for(var i = 0; i < 10; i++){
-		if(i % 3 ==0){
-			
-		}
 	}
-}
 
 }

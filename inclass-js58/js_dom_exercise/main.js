@@ -24,21 +24,19 @@ window.onload = function() {
 btn.onclick = function(event){
 	event.preventDefault();
 
-	var pmt = prompt("what are your favorite things?", " ");
+	var pmt = prompt("What are your favorite things?");
 
-	if(pmt != null){
-	newText = document.getElementById("new-thing").value;
-	var newthingTextNode = document.createTextNode(newText);
 	
+	var  newText = document.getElementById("new-thing");
+	var text = document.createTextNode(newText.value);
+	
+	var listElem = document.getElementById("fav-list");
 	var addThing = document.createElement("li");
-	var listElem = getElementById("fav-list");
-
+	addThing.appendChild(text);
 	listElem.appendChild(addThing);
-	addThing.appendChild(newthingTextNode);
 	
-}else{
-	var alrt = alert("You must type in a value");
-}
+	
+console.log(text);
 
 
 	}
