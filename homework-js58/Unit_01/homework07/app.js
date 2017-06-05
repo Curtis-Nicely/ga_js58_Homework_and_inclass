@@ -23,6 +23,16 @@ var form = document.getElementById("fizzbuzz-form");
 
 btn.onclick = function(event){
 		event.preventDefault();
+	var grabForm = document.getElementById("fizzbuzz-form");	
+	var ulElem = grabForm.lastChild;
+
+d(ulElem >0){
+	console.log(ulElem);
+grabForm.removeChild(ulElem);
+}
+
+
+do
 var input1 = document.getElementById("the-input").value;
 var parsedInput = Number.parseInt(input1, 10);
 var fizzbuzzList = document.createElement("ul");
@@ -56,11 +66,10 @@ for(var i = 1; i <= parsedInput; i ++){
 	}
 }
 
-
+}
 
 
 		
 
 	}
 
-}
