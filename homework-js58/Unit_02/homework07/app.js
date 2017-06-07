@@ -26,7 +26,7 @@ btn.onclick = function(event){
 	var grabForm = document.getElementById("fizzbuzz-form");	
 	var ulElem = grabForm.lastChild;
 
-d(ulElem >0){
+while (ulElem.hasChildNodes){
 	console.log(ulElem);
 grabForm.removeChild(ulElem);
 }
