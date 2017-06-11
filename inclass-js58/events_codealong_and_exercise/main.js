@@ -23,7 +23,7 @@ $($favList).on('click', 'li a.delete', function(e){
 )
 
 $($favList).on('click', 'li a.complete', function(e){
-	$(this).css("text-decoration", "line-through");
+	$(this).parent().css("text-decoration", "line-through");
 })
 
 $('#new-thing-button').on('click', function(){
