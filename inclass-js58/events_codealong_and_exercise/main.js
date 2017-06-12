@@ -29,7 +29,7 @@ $($favList).on('click', 'li a.complete', function(e){
 $('#new-thing-button').on('click', function(){
 	var currentValue = $('#new-thing').val();
 	console.log(currentValue);
-var listItem = $('<li class="fav-thing">' + currentValue' '<a class="complete" href="#">Complete</a> <a class="delete" href="#">Delete</a></li>')
+var listItem = $('<li class="fav-thing">' + currentValue + '<a class="complete" href="#">Complete</a> <a class="delete" href="#">Delete</a></li>')
 
 listItem.appendTo(favList);
 }
