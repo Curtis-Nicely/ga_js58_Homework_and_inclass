@@ -12,7 +12,7 @@ You'll add the ability to complete tasks in the list. Your program must complete
 
 $(function() {
 
-
+//promt for name 
 var $yourName = prompt('What is your name?');
 $('#name').html($yourName);
 if($yourName===null){
@@ -23,40 +23,46 @@ $('#name').html('POOPY');
 
 var $toDoList = $('#to-do-list');
 
-
 $($toDoList).on('click', 'li a.complete', function(){
 var $completedTask = $(this).parent().css("text-decoration", "line-through");
- var $body = $('#body');
-var $addCompleteList = $('<ul><ul>');
-$addCompleteList.html($completedTask);
-$toDoList.appendTo($body);
+ var $completedList = $('#completed-list');
+$completedTask.appendTo($completedList );
 
   
 })
   var $button = $('#new-thing-button');
   $button.on('click', function(event) {
-    event.preventDefault();
+    event.preventDefault(); 
     MyApp.addToList($toDoList);
    
   });
-});
+
+
+
 // add an item to the list
-
-
 var MyApp = {};
 
 MyApp.addToList = function(list) {
    
-var $newLi = $('<li class="to-do"><a class="complete" href="#">_Complete</a></li>');
-var $newItemText = $('#new-thing');
-$newLi.html($newItemText.val());
-
- $newItemText.val('');
+var $newItemText = $('#new-thing').val();
+var $newLi = $('<li class="to-do">' + $newItemText +'<a class="complete" href="#">_Completed</a></li>');
   if ($newLi.html() !== '') {
+   
     list.append($newLi);
+//$newItemText.html("");
+
+$($newLi).on('click', 'li a.complete', function(){
+
+})
+
+
   }
+
 }
 
 
+
+
+});
 
 
