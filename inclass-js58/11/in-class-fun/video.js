@@ -19,7 +19,7 @@ $('#random-video').append($(element))
 $('#add-video').o('click', function(){
 	var currentId = $('#random-video-id').val();
 	videoIds.push(currentId);
-	$(.#random-video-id').val();
+	$('. #random-video-id').val();
 })
 });
 
