@@ -10,16 +10,17 @@ $('#get-weather').on('click', function(event){
 	loading.show();
 
 event.preventDefault();
-console.log("work?");
 
 
+// Our URL format:
+// https://js58-proxy.herokuapp.com/forecast/34b3975eb162a8bbe48e843a2eb04a43/long,lat
 //obtain the values that the user has typed in by 
 //getting the element by id and calling val()
 var long = $('#longitude').val();
 var lati  = $('#longitude').val();
 
-//https://js58-proxy.herokuapp.com/forecast/34b3975eb162a8bbe48e843a2eb04a43/long,lati
-var baseURL = "https://js58-proxy.herokuapp.com/forecast/34b3975eb162a8bbe48e843a2eb04a43/";
+var baseURL = "https://js58-proxy.herokuapp.com/forecast/34b3975eb162a8bbe48e843a2eb04a43"
+
 var weatherURL = baseURL + "/" + long + "," + lati
 //use the jquery get method to perform an ajax request
 $.get(weatherURL, function(response){

@@ -12,11 +12,11 @@ $('#random-video-btn').on('click', function(){
 	$('#random-video-btn').empty();
 
 
-var element = '<iframe width="100%" src="https://www.youtube.com/embed/' + videoIds[randIndex] + '" frameborder="0" allowfullscreen></iframe>'
+var element = '<iframe height="100%" width="100%" src="https://www.youtube.com/embed/"' + videoIds[randIndex] + '" frameborder="0" allowfullscreen></iframe>'
 
 $('#random-video').append($(element))
 
-$('#add-video').o('click', function(){
+$('#add-video').on('click', function(){
 	var currentId = $('#random-video-id').val();
 	videoIds.push(currentId);
 	$('. #random-video-id').val();

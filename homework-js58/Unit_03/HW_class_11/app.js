@@ -9,15 +9,15 @@ After the timer has lapsed, display a gigantic kitten on the page
 $(function(){
 
 var $kittyMaker = $('#kitty-button');
-var $kittyURL = $('<a href="http://placekitten.com/200/300"></a>');
+var $kittyURL = $('<img href="http://placekitten.com/200/300"></img>');
 
 
 $($kittyMaker).on('click', function(){
 var $kittyFrame = $('#kittyspace').append( $kittyURL );
 
-$kittyFrame.hide("slow", function(){
-	this.parseInt(Math.random() * 1000);
-});
+// $kittyFrame.hide("slow", function(){
+// 	this.parseInt(Math.random() * 1000);
+// });
 });
 
 
