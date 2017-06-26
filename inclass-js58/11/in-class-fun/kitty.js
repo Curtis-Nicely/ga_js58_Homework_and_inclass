@@ -16,15 +16,18 @@ var loading2 = $('#loading-marquee2');
 
 	
 	var randomNum = Math.floor(4*Math.random());
-
+	var randomTime = Math.floor(Math.random() * 1000)
 	var randomKittyPic = ["kat.png", "kat2.png", "kat3.png", "kat4.png"];
-		
+	
+	function paster(){
+	var $kittypaster = $('#paste-kitty').attr('src',randomKittyPic[randomNum]);
+	}
 
-$('#paste-kitty').attr('src',randomKittyPic[randomNum]);
-  
-console.log(randomNum);
+window.setTimeout(paster, randomTime)
+  loading2.hide();
+
 	});
 
-loading2.hide();
+
 
 });

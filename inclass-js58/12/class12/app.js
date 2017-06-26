@@ -27,9 +27,9 @@ $('#login').click(function(){
 	_500px.on('authorization_obtained', function(){
 		console.log("Authorized Successfully");
 
-		$('#login').hide();
-	var $currentBtn = $('<button class="btn btn-primary" type="submit" id="current-location-btn">CLICK HERE FOR MORE RANDOM IMAGES FROM WHERE YOU ARE</button>');
-$currentBtn.appendTo('#container1');
+// 		$('#login').hide();
+// 	var $currentBtn = $('<button class="btn btn-primary" type="submit" id="current-location-btn">CLICK HERE FOR MORE RANDOM IMAGES FROM WHERE YOU ARE</button>');
+// $currentBtn.appendTo('#container1');
 
 
 // var $clBtn = $('#current-location-btn').on('click', function(){
