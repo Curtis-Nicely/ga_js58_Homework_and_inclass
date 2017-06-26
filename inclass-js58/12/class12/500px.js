@@ -1,3 +1,15 @@
+
+
+// Add a button to the page that when clicked, uses the browsers current location for searching 500px and loads the photos.
+
+// Add an input box for a user to type in a latitude and longitude in the format of "42.0,42.0" and use that to search 500px and display the photos
+
+// When the photos are being loaded (they have not loaded yet), display a "Loading..." somewhere on the page that disappears when the photos have loaded.
+
+
+
+
+
 /*jslint eqeq: true, newcap: true, nomen: true, plusplus: true, browser: true, indent: 2 */
 (function () {
   'use strict';
@@ -73,24 +85,24 @@
     };
 
     // api(url, http_method, parameters, callback)
-    //
+    
     // Executes an API call. All parameters are optional except `url`. `parameters` must be an object and `callback` a function.
     // The callback will be passed a Response object. The response object has these methods:
-    //
+    
     //    `success` (boolean) True if no errors occurred, false if errors occured.
     //    `error` (boolean) True if an error occured.
     //    `error_message` (string) The text of the error message.
     //    `status` (integer) The HTTP status code of the response.
     //    `data` (object) The data returned by the API.
-    //
+    
     //    _500px.api('/users', function (response) {
     //      console.log('My User Data Is', response.data);
     //    });
-    //
+    
     //    _500px.api('/users/937847/friend', 'post', function (response) {
     //      console.log('Now following user ', 937847);
     //    });
-    //
+    
     //    _500px.api('/photos/899999', 'put', { name: 'My New Photo Name' }, function (response) {
     //      if (response.success) {
     //        console.log('Your photo was updated');
@@ -98,6 +110,8 @@
     //        console.log('An Error occurred: ', response.error_message);
     //      }
     //    });
+
+    
     this.api = function () {
       if (!this.sdk_key) {
         throw "api: SDK not initialized. Use _500px.init() first.";
