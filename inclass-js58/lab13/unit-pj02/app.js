@@ -2,13 +2,13 @@ $(function(){
 
 
 var baseURL="https://newsapi.org/v1/articles";
-var apiKey = "9f672f4d107445ee8db2194825da2f38";
+var apiKey = "8ed28ce2d2bb490eafaf328d1f32d750";
 
-$.get("https://newsapi.org/v1/articles", function(results){
-    //$("#popup").append("<li>"+results.content.title+"</li>")
-    $("#popup").append("<li>"+results"</li>")
-console.log(results);
-  })
+// $.get("https://newsapi.org/v1/articles", function(results){
+//     //$("#popup").append("<li>"+results.content.title+"</li>")
+//     $("#popup").append("<li>"+results"</li>")
+// console.log(results);
+//   })
 
 
  

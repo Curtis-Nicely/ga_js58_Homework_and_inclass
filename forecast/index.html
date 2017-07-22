@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forcast</title>
+<link rel="stylesheet" href="style.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript" src="app.js"></script>
+</head>
+
+<body>
+<!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+        <div class="container">
+            <!--toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Blasterboy</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                 
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <div class="container">
+            <div class="col-md-6 col-sm-12">
+                <h1 id="spot-name">Point Judith Lighthouse</h1>
+                <p>
+               	 	<span class="w-info">Wave Height:  </span>
+               	 		<span class ="w-data" id="w-height"></span>
+               	 	<span class="w-info">Period:  </span>
+               	 		<span class ="w-data" id="w-period"></span>
+                	<span class="w-info">Direction:  </span>
+                		<span class ="w-data" id="w-direction"></span>
+                </p>
+                <p>
+                	<span class="w-info">Wind Direction:  </span>
+                		<span class ="w-data" id="wd-direction"></span>
+                	<span class="w-info">Wind Speed:  </span>
+                		<span class ="w-data" id="wd-speed"></span>
+				</p>
+				<p>
+                	<span class="w-info">Water Temperature:  </span>
+                		<span class ="w-data" id="wtr-temp"></span>
+            	</p>
+
+
+      </div>  
+    </div>
+				<div id="map"></div>
+	<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEsfH1PcatkRwfPc9yUe9BF818CiVQE-M&callback=initMap">
+    </script>
+      
+
+</body>
+</html>
